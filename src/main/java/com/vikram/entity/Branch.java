@@ -71,8 +71,4 @@ public class Branch {
 		return "Branch [branchId=" + branchId + ", branchName=" + branchName + ", bankId=" + bank + "]";
 	}
 
-	public void assignBank(Bank bank2) {
-		this.bank = bank2;
-	}
-
 }

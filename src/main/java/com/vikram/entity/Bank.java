@@ -22,14 +22,6 @@ public class Bank {
 	@OneToMany(mappedBy = "branchId", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
 	private List<Branch> branches = new ArrayList<Branch>();
 
-//	@Column(name = "custId")
-//	@OneToMany(mappedBy = "custId", fetch = FetchType.LAZY)
-//	private List<Customer> customers = new ArrayList<Customer>();
-//
-//	@Column(name = "empId")
-//	@OneToMany(mappedBy = "empId", fetch = FetchType.LAZY)
-//	private List<Employee> employees = new ArrayList<Employee>();
-
 	public Bank() {
 		super();
 	}
@@ -68,14 +60,6 @@ public class Bank {
 	public void addBranch(Branch branch) {
 		branches.add(branch);
 	}
-
-//	public void addCustomer(Customer customer) {
-//		customers.add(customer);
-//	}
-//
-//	public void addEmployee(Employee newEmployee) {
-//		employees.add(newEmployee);
-//	}
 
 	@Override
 	public String toString() {
